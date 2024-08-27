@@ -999,6 +999,115 @@ textarea.input-field {
  * #MEDIA QUERIES
 \*-----------------------------------*/
 
+@media (min-width: 360px) and (max-width: 480px){
+  h2.hero-title span.product {
+    font-weight: 800;
+    font-size: 54px;
+    letter-spacing: -1px; 
+  }
+  
+  h2.hero-title span.designer {
+    font-weight: 800;
+    font-size: 62px;
+    display: block; 
+    margin-top: -4px; 
+  }
+  
+  h2.hero-title .portfolio {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Caveat';
+    font-size: 72px;
+    font-weight: 700;
+    color: #FD5C04; 
+    z-index: 2;
+    pointer-events: none;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/caveat/v18/WnznHAc5bAfYB2QRah7pcpNvOx-pjRV6eIWpYQ.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+  }
+
+  .fname{
+    color: #FD5C04;
+    font-family: 'Cabinet Grotesk';
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    left: 120px;
+    letter-spacing: 2px;
+  }
+  
+  .lname{
+    color: #FD5C04;
+    font-family: 'Cabinet Grotesk';
+    font-size: 16px;
+    font-weight: 600;
+    position: relative;
+    left: 150px;
+    letter-spacing: 2px;
+  }
+
+  .freelance{
+    font-family: 'cabinet grotesk';
+    color: #757575;
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .scroll-down {
+    display: block;
+    position: absolute;
+    bottom: 80px;
+    right: 2px;
+    color: var(--color-secondary);
+    font-size: 18px;
+    text-transform: uppercase;
+    transform: rotate(90deg);
+    transform-origin: top right;
+  }
+
+  .scroll-down::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: -50px;
+    width: 30px;
+    height: 2px;
+    background: var(--color-secondary);
+  }
+
+  .hero-social-list {
+    display: block;
+    position: absolute;
+    bottom: 92px;
+    left: 2px;
+  }
+
+  .hero-social-list::after {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    left: 13px;
+    width: 2px;
+    height: 30px;
+    background: var(--color-secondary);
+  }
+
+  .hero-social-link {
+    position: relative;
+    color: var(--color-secondary);
+    margin-block: 5px;
+    padding: 5px;
+    font-size: 18px;
+    transition: var(--transition-1);
+  }
+}
+
 /**
  * responsive for larger than 550px screen
  */
@@ -1008,7 +1117,6 @@ textarea.input-field {
   /**
    * REUSED STYLE
    */
-
   .container {
     max-width: 550px;
     margin-inline: auto;
