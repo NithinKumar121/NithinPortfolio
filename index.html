@@ -10,6 +10,7 @@
   <!-- <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml"> -->
 
   <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="https://cdn.tailwindcss.com"></script>
 
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +20,7 @@
     rel="stylesheet">
 </head>
 
-<body id="top" class="dark_theme">
+<body id="top" class=" dark_theme">
 
   <!-- 
     - #HEADER
@@ -75,13 +76,14 @@
 
 
 
-  <main>
+  <main class="md:px-[180px] relative">
     <article class="container">
 
       <!-- 
         - #HERO
       -->
 
+      <div class="">
       <section class="hero" id="home">
 
 
@@ -113,9 +115,12 @@
 
       </div>
       
+        </section>
 
-        <ul class="hero-social-list">
-
+        <!-- socialmedia -->
+        <div class="absolute md:left-[10%] left-2 top-[calc(100vh-180px)]">
+          <ul class="">
+  
           <li>
             <a href="https://www.linkedin.com/in/nithinkumar11" class="hero-social-link" target="_blank">
               <ion-icon name="logo-linkedin"></ion-icon>
@@ -140,12 +145,15 @@
               <div class="tooltip">Figma</div>
             </a>
           </li>
-
         </ul>
+        </div>
 
-        <a href="#stats" class="scroll-down">Scroll</a>
+        <!-- scroll -->
+        <div class="absolute md:right-[10%] right-2 top-[calc(100vh-180px)] text-white">
+          <a href="#stats" class="">Scroll</a>
+        </div>
+      </div>
 
-      </section>
 
 
 
