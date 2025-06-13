@@ -156,7 +156,7 @@
    * spacing
    */
 
-  --section-padding: 80px;
+  --section-padding: 12px;
 
   /**
    * radius
@@ -721,7 +721,7 @@ h2.hero-title .portfolio {
  * #ABOUT
 \*-----------------------------------*/
 
-.about { padding-block: var(--section-padding); }
+/* .about { padding-block: var(--section-padding); } */
 
 .about-banner {
   max-width: 400px;
@@ -1163,7 +1163,7 @@ textarea.input-field {
    * STATS
    */
 
-  .stats-list { grid-template-columns: 1fr 1fr; }
+  .stats-list { grid-template-rows: 1fr 1fr; }
 
 
 
@@ -1396,7 +1396,7 @@ textarea.input-field {
    * STATS
    */
 
-  .stats-list { grid-template-columns: repeat(3, 1fr); }
+  .stats-list { grid-template-columns: repeat(2, 1fr); }
 
   .stats-card { height: 100%; }
 
